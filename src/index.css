@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+
+    .libefore {
+        position: relative;
+    }
+    
+
+    .libefore::before,
+    .libefore::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .libefore::before {
+        top: 0;
+        left: 0;
+    }
+
+    .libefore::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .libefore:hover::after,
+    .libefore:hover::before {
+        width: 100%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+}

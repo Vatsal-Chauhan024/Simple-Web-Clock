@@ -1,0 +1,11 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: "Poppins";
+    background-image: url("./assets/bgbackground.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center top-center;
+}
